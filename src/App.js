@@ -5,6 +5,7 @@ import Feedbackstats from "./components/Feedbackstats"
 import FeedbackForm from "./components/FeedbackForm"
 import AboutPage from "./components/pages/AboutPage"
 import { FeedbackProvider } from "./context/FeedbackContext"
+import AboutIconLink from './components/AboutIconLink'
 
 
 function App(){
@@ -14,7 +15,7 @@ function App(){
         <Header />
           <div className="container">
           <Routes>
-            <Route exact path="/" element={
+            <Route path="/" element={
               <>
               <FeedbackForm />
               <Feedbackstats/>
@@ -26,6 +27,7 @@ function App(){
 
             <Route path='/about' element={<AboutPage/>}/>
             </Routes>
+            <AboutIconLink/>
           </div>
       </Router>
     </FeedbackProvider>
