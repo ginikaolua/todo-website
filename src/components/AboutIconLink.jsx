@@ -1,12 +1,12 @@
-import{FaQuestion} from 'react-icons/fa'
+import{FaInfoCircle} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 
 const AboutIconLink = () => {
   return (
-    <div className='about-link'>
+    <div >
       <Link to= '/about'>
-        <FaQuestion size={30}/>
+        <FaInfoCircle className='about-link' size={40}/>
       </Link>
     </div>
   )

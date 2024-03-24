@@ -11,6 +11,7 @@
 a{
   color: #ff6a95;
   text-decoration: none;
+  padding-left: 8px;
 
 }
 a:hover{
@@ -140,12 +141,13 @@ code {
 }
 .foot{
   color: #e07c98;
-  font-size: smaller;
+  font-size: x-small;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: center;
+  margin-top: 150vh;
 }
 
 .num-display {
@@ -207,23 +209,29 @@ code {
 }
 
 .about-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 7px;
+  padding-bottom: 7px;
   color: #fff;
-  cursor: pointer;
+}
+.about-link:hover{
+  color: #ff6a95;
 }
 
 .about-link a {
+  
   color: #fff;
 }
 
 .about-link a:hover {
   color: #ff6a95;
 }
-
+.about{
+  padding-bottom: 50%;
+}
 .about h1 {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .about p {

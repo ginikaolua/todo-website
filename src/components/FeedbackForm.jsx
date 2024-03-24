@@ -4,6 +4,7 @@ import Button from './shared/Button'
 import RatingSelect from './RatingSelect'
 import FeedbackContext from '../context/FeedbackContext'
 
+
 const FeedbackForm = () => {
     const[ text, setText] = useState('')
     const[rating, setRating] = useState(10)
@@ -50,7 +51,7 @@ const FeedbackForm = () => {
   return (
     <Card>
       <form onSubmit={handleSubmit}>
-        <h2>List Your Items and rate how important they are on a scale of 1-10</h2>
+        <h2>List your items and rate how important they are on a scale of 1-10</h2>
         <RatingSelect select={(rating)=>setRating(rating)}/>
         <div className="input-group">
             <input onChange={handleTextChange} type="text" placeholder='list...' value={text}/>
