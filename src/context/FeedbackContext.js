@@ -9,6 +9,11 @@ export const FeedbackProvider =({children})=>{
             id:1,
             text: 'Take out the trash',
             rating: 10
+        },
+        {
+            id:2,
+            text: 'Go grocery shopping',
+            rating: 7
         }
     ])
     const[feedbackEdit, setFeedbackEdit] = useState({
